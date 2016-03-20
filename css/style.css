@@ -1,0 +1,267 @@
+/*----------------------------------------------
+
+    Developed by Octavian Mos 2015
+    octavianhd@gmail.com
+
+-----------------------------------------------*/
+/*----------------------------------------------
+
+    Table of content:
+
+    #Main;
+    #Header;
+    #Navigation;
+    #Home section;
+    #Services section;
+    #Contact section;
+    #Pager Div;
+    #Footer;
+    #Scroll Up;
+    #Responsive.
+    
+-----------------------------------------------*/
+
+/*---------------------------Main-----------------------------*/
+*{
+	box-sizing: border-box;
+}
+body{
+	font-family: verdana,sans-serif;
+	font-size: normal;
+	margin: 0;
+}
+p{
+	text-indent: 20px;
+}
+ul{
+	padding: 0;
+	margin-bottom: 0;
+	list-style-type: none;
+}
+a,button {
+	transition: 0.5s ease-in-out;
+	-moz-transition: 0.5s ease-in-out;
+	-webkit-transition: 0.5s ease-in-out;
+}
+a:hover,a:focus{
+	text-decoration: none;
+}
+.separator{
+	width: 50%;
+	height: 2px;
+	background-color: #c2c2ad;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+/*------------------------------Header------------------------------*/
+
+header{
+	width: 100%;
+	height: 650px;
+	background-image: url(../pics/header_img1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: sans-serif;
+	text-align: center;
+	color: #fff;
+}
+header h2{
+	font-size: 44px;
+	font-weight: 800;
+	padding: 60px 0;
+	text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+}
+
+/*------------------------------Navigation----------------------------*/
+
+.navi ul{
+	padding: 50px 0 60px 0;
+}
+.navi li{
+	padding: 0 20px;
+}
+.navi li a{
+	font-family: sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	color: #474724;
+	text-decoration: none;
+	text-shadow: 3px 3px 5px #888888,1px 1px 3px #fff;
+}
+.navi li a:hover{
+	color: #666633;
+	text-shadow: 2px 2px 4px #000;
+}
+.main-btn{
+	font-size: 20px;
+	font-weight: 500;
+	background-color: #474724;
+	text-transform: uppercase;
+	color: white;
+	padding: 20px 40px;
+	margin-top: 100px;
+	border-radius: 50px;
+}
+.main-btn:hover{
+	background-color: #949470;
+	box-shadow: 5px 5px 10px #888888,2px 2px 4px #000;
+}
+/*--------------------------------Home section-------------------------*/
+
+#home{
+	margin: 20px 0;
+}
+#home img{
+	width: 350px;
+	height: 250px;
+	padding: 20px 40px;
+}
+.home-btn{
+	background-color: #666633;
+	color: #fff;
+	margin-top: 40px;
+
+}
+.home-btn:hover{
+	background-color: #949470;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+/*-------------------------------Services section------------------------*/
+
+#services{
+	padding: 20px 0;
+	background-color: #f0f0eb;
+	text-align: left;
+}
+#services img{
+	width: 300px;
+	height: 200px;
+	margin: 50px 0;
+}
+/*--------------------------------Contact section---------------------*/
+
+#contact{
+	margin: 20px 0;
+}
+#contact h3{
+	font-weight: 600;
+	transition: 0.5s;
+}
+#contact h3:hover{
+	text-shadow: 5px 5px 10px #888888;
+}
+#contact input, #contact textarea{
+	width: 100%;
+	border: none;
+	border-bottom: 1px solid #949470;
+	background: none;
+	text-align: left;
+}
+#contact button{
+	position:center;
+	padding: 15px 30px;
+	background-color: #666633;
+	color: #fff;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+}
+#contact button:hover{
+	background-color: #949470;
+	box-shadow: 5px 5px 5px #888888;
+}
+/*-------------------------------Footer-------------------------------*/
+
+footer {
+	padding: 20px 0;
+	background-color: #949470;
+}
+footer .navi ul{
+	padding: 5px 0;
+}
+footer p{
+	padding: 20px 0;
+}
+.social ul li {
+	padding: 5px 10px;
+}
+.social ul li a {
+	font-size: 20px;
+	color: #50c3af;
+}
+.social ul li a:hover {
+	color: #A8E1D7;
+}
+
+/*-------------------------------Pager Div-------------------------*/
+
+#pagerDiv li a{
+	background-color: #666633;
+	color: #fff;
+}
+#pagerDiv li a:hover{
+	background-color: #949470;
+	box-shadow: 5px 5px 10px #888888;
+}
+/*--------------------------------Scroll Up------------------------*/
+
+#scrollUp {
+	bottom: 20px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: url(../pics/top.png) no-repeat;
+	opacity: .5;
+}
+#scrollUp:hover {
+	opacity: 1;
+}
+
+
+/*------------------------------Responsive------------------------*/
+
+@media(max-width: 768px){
+	header{
+		height: 350px;
+	}
+	header h2{
+		font-size: 24px;
+		font-weight: 600;
+		padding: 20px 0;
+		text-shadow: 5px 5px 10px #888888,1px 1px 3px black;
+	}
+	.navi ul{
+		padding: 20px 0 20px 0;
+	}
+	.navi li{
+		padding: 0 10px;
+	}
+	.navi li a{
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	.main-btn{
+		font-size: 16px;
+		font-weight: 400;
+		text-transform: uppercase;
+		padding: 10px 20px;
+		margin-top: 50px;
+	}
+	#home, #services, #contact, #footer{
+		font-size: 12px;
+		display: flex;
+	}
+	#home img, #services img{
+		width: 180px;
+		height: 125px;
+		padding: 10px 20px;
+
+	}
+	#services h3, #contact h3{
+		font-size: 16px;
+	}
+	
+	
+}
